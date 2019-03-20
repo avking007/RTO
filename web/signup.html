@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign-Up| Parivahan Sewa| Lucknow</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	  
+	  	<style>
+        input{
+
+          color: black;
+        }
+
+
+          .the-legend{
+            
+              border-width: 0;
+              font-size: 20px;
+              line-height: 20px;
+              margin-bottom: 0;
+              width: auto;
+              padding: 0 10px;
+              color: black;
+              
+          }
+          .the-fieldset{
+              border:2px solid #e0e0e0;
+              padding: 10px;
+              font-family: bold;
+              width: 300px;
+              color: white;
+          }
+	  </style>
+</head>
+<body style="background: url(back.png)">
+	<nav class="navbar navbar-default" style="font-size: 20px;">
+	  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar" ></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="index.html">Home</a></li>
+        <li class="active"><a href="about.html">About-Us</a></li>
+        <li class="dropdown">
+          <a  href="contact.html">Contact Us</a>
+            </li>
+      <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Log-in<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+         	   <li><a href="admin.html">Admin</a></li>
+            	<li><a href="login.html">User</a></li>
+
+          	   </ul>
+
+        </li>
+        <li ><a href="signup.html">Sign-up</a></li>
+        <li class="dropdown" >
+
+         <form action="search.jsp" method="post" class="nav navbar-nav navbar-right" style="margin-top: 10px;">
+      
+      <input type="text" name="search"><button><span style="color: black;" class="glyphicon glyphicon-search"></span></button>
+      </form>
+  </li>
+    </ul>
+    </div>
+  </div>
+          </div>
+</nav>
+<br>
+<center>
+<div class="container-fluid" style="border: 1px grey;">
+	<fieldset class="the-fieldset">
+		<legend class="the-legend">Sign-Up</legend>
+			<form action="signup.jsp" method="post">
+                            Name<input style="margin-left: 10px;" type="text" name="name" required><br>
+			<br>
+                        Gender<br>Male<input style="margin-left: 10px;"type="radio" name="gen" value="M" required>
+                        Female<input style="margin-left: 10px;"type="radio" name="gen" value="F" required><br>
+			<br>
+                        DOB <input style="margin-left: 10px;" type="date" name="dob" required><br>
+			<br>
+			Mobile No. <input style="margin-left: 8px;"type="text" name="mob" required><br>
+			<br>
+			Username <input style="margin-left: 15px;"type="text" name="us" required><br>
+			<br>
+                        Password <input style="margin-left: 14px;" type="password" name="ps" required><br>
+                        <br>
+			<input type="submit" value="Sign-up" style="color: black;">
+		</form>
+	</fieldset>
+</div>
+</center>
+</body>
+</html>
