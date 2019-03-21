@@ -10,13 +10,12 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author Anish
  */
-public class vehicle extends HttpServlet {
+public class licence extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -27,17 +26,11 @@ public class vehicle extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-                /* TODO output your page here. You may use following sample code. */
-
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try  
-        {
-            HttpSession session = request.getSession();
-             String name= (String)session.getAttribute("un");
-            PrintWriter out = response.getWriter();
-            out.println("<!DOCTYPE html>\n" +
+        PrintWriter out = response.getWriter();
+        out.println("<!DOCTYPE html>\n" +
 "<html>\n" +
 "<head>\n" +
 "	<title>Vehicle Registration | Parivahan Sewa| Lucknow </title>\n" +
@@ -100,7 +93,7 @@ public class vehicle extends HttpServlet {
 "          <a  href=\"contact\">Contact Us</a>\n" +
 "            </li>\n" +
 "         <li class=\"dropdown\">\n" +
-"          <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">"+name+"<span class=\"caret\"></span></a>\n" +
+"          <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">name<span class=\"caret\"></span></a>\n" +
 "             <ul class=\"dropdown-menu\">\n" +
 "\n" +
 "            	<li><a href=\"logout\">Logout</a></li>\n" +
@@ -122,51 +115,27 @@ public class vehicle extends HttpServlet {
 "</nav>\n" +
 "<center>\n" +
 "<div class=\"container-fluid\">\n" +
-"\n" +
 "	<fieldset class=\"the-fieldset\">\n" +
-"		<legend class=\"the-legend\">Vehicle Registration</legend>\n" +
-"			<form action=\"vehicle_submit\" method=\"post\">\n" +
+"		<legend class=\"the-legend\">Licence</legend>\n" +
+"			<form action=\"licence_submit\" method=\"post\">\n" +
 "				Name<input type=\"text\" name=\"name\" style=\"margin-left: 10px;\"><br>\n" +
 "				<br>\n" +
-"				Age<input type=\"number\" name=\"age\"style=\"margin-left: 20px;\"><br>\n" +
+"				Age<input type=\"number\" name=\"age\"style=\"margin-left: 20px;\">\n" +
 "				<br>\n" +
-"				Permanent Address <textarea name=\"padd\" style=\"margin-left: 10px;\"></textarea><br>\n" +
 "				<br>\n" +
-"\n" +
-"				Communication Address <textarea name=\"cadd\" style=\"margin-left: 10px;\"></textarea><br>\n" +
+"				Reg No. <input type=\"number\" name=\"reg\"><br>\n" +
 "				<br>\n" +
-"				Class<select name=\"class\"  style=\"margin-left: 10px;\">\n" +
-"					<option value=\"sel\">Select</option>\n" +
-"					<option value=\"lmv\">LMV -NT</option>\n" +
-"					<option value=\"mcg\">MCG</option>\n" +
-"					<option value=\"both\">LMV-NT & MCG</option>\n" +
-"				</select>\n" +
-"				<br>\n" +
-"				<br>\n" +				
 "				<input type=\"submit\" value=\"Submit\"></button>\n" +
 "			</form>\n" +
 "	</fieldset>\n" +
-"\n" +
 "</div>\n" +
-"\n" +
-"\n" +
 "</center>\n" +
-"\n" +
-"\n" +
-"\n" +
-"\n" +
-"\n" +
-"\n" +
-"\n" +
 "</body>\n" +
 "</html>");
-        }
-        catch(Exception e)
-        {
-            e.printStackTrace();
-        }
-    }
+    
+    
 
+    }
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.

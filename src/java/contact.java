@@ -59,7 +59,7 @@ public class contact extends HttpServlet {
 "        <li class=\"dropdown\">\n" +
 "          <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Online Services<span class=\"caret\"></span></a>\n" +
 "              <ul class=\"dropdown-menu\">\n" +
-" 	     	 	<li><a href=\"#\">License Application</a></li>\n" +
+" 	     	 	<li><a href=\"licence\">License Application</a></li>\n" +
 "            	<li><a href=\"vehicle\">Vehicle Registration</a></li>\n" +
 "            	<li><a href=\"complaint\">Complaint Registration</a></li>          	   \n" +
 "            </ul>\n" +

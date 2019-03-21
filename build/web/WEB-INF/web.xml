@@ -60,6 +60,14 @@
         <servlet-name>vehicle_submit</servlet-name>
         <servlet-class>vehicle_submit</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>licence</servlet-name>
+        <servlet-class>licence</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>licence_submit</servlet-name>
+        <servlet-class>licence_submit</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>profile</servlet-name>
         <url-pattern>/profile</url-pattern>
@@ -119,6 +127,14 @@
     <servlet-mapping>
         <servlet-name>vehicle_submit</servlet-name>
         <url-pattern>/vehicle_submit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>licence</servlet-name>
+        <url-pattern>/licence</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>licence_submit</servlet-name>
+        <url-pattern>/licence_submit</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

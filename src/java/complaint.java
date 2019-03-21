@@ -89,8 +89,8 @@ public class complaint extends HttpServlet {
 "					<li class=\"dropdown\" class=\"active\">\n" +
 "						<a href=\"\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Online Services<span class=\"caret\"></span></a>\n" +
 "						<ul class=\"dropdown-menu\">\n" +
-"							<li><a href=\"#\">License Application</a></li>\n" +
-"        					<li><a href=\"#\">Vehicle Registration</a></li>\n" +
+"							<li><a href=\"licence\">License Application</a></li>\n" +
+"        					<li><a href=\"vehicle\">Vehicle Registration</a></li>\n" +
 "            				<li><a href=\"complain\">Complaint Registration</a></li>\n" +
 "\n" +
 "						</ul>\n" +
